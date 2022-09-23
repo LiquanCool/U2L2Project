@@ -27,8 +27,8 @@ public class U2L2Runner {
         System.out.println("What is the tax rate for your area?");
         double tax = s.nextDouble();
         ConstructionPricer price1 = new ConstructionPricer(11.50, 25.75, tax);
-        Double totalNoTax = price1.materialsCost(lumberPieces, windows);
-        Double grandTotal = price1.totalWithTax(totalNoTax);
+        double totalNoTax = price1.materialsCost(lumberPieces, windows);
+        double grandTotal = price1.totalWithTax(totalNoTax);
         System.out.println("Total Materials Cost: " + totalNoTax);
         System.out.println("Grand Total after Tax: " + grandTotal);
     }
